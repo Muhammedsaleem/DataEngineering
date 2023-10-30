@@ -11,7 +11,7 @@
 		"type": "HttpServer",
 		"typeProperties": {
 			"url": "https://ergast.com/api/f1/",
-			"enableServerCertificateValidation": false,
+			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
 	}

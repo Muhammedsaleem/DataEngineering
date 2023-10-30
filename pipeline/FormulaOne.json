@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Drivers",
+				"name": "Copy Status",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {

@@ -16,6 +16,9 @@
 		},
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://ergast.com/api/f1/status.json"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://ergast.com/api/f1/drivers.json"
 		}
 	}
 }

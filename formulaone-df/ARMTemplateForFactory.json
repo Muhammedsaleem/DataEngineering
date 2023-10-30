@@ -22,6 +22,10 @@
 		"HttpServer1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://ergast.com/api/f1/status.json"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ergast.com/api/f1/drivers.json"
 		}
 	},
 	"variables": {
@@ -35,7 +39,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy Drivers",
+						"name": "Copy Status",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -84,7 +88,7 @@
 						]
 					},
 					{
-						"name": "Copy data1",
+						"name": "Copy Drivers",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -200,6 +204,27 @@
 				"type": "HttpServer",
 				"typeProperties": {
 					"url": "[parameters('HttpServer1_properties_typeProperties_url')]",
+					"enableServerCertificateValidation": true,
+					"authenticationType": "Anonymous"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/HttpServer2')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"parameters": {
+					"limit": {
+						"type": "string",
+						"defaultValue": "1000"
+					}
+				},
+				"annotations": [],
+				"type": "HttpServer",
+				"typeProperties": {
+					"url": "[parameters('HttpServer2_properties_typeProperties_url')]",
 					"enableServerCertificateValidation": true,
 					"authenticationType": "Anonymous"
 				}

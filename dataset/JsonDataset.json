@@ -1,0 +1,26 @@
+{
+	"name": "JsonDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer3",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat('https://ergast.com/api/f1/', dataset().Name)",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}

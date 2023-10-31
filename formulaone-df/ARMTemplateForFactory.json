@@ -187,7 +187,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "@concat('', dataset().Name)",
+							"value": "@concat(dataset().Name, '.json')",
 							"type": "Expression"
 						}
 					}
@@ -218,7 +218,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": {
-							"value": "@concat(dataset().Name, '.json')",
+							"value": "@concat(dataset().Name, '.json')\n\n",
 							"type": "Expression"
 						},
 						"fileSystem": "raw"

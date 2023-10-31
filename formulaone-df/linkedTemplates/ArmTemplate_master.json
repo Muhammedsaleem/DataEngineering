@@ -27,6 +27,10 @@
 			"type": "string",
 			"defaultValue": "https://ergast.com/api/f1/drivers.json"
 		},
+		"HttpServer3_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ergast.com/api/f1/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -68,6 +72,9 @@
 					},
 					"HttpServer2_properties_typeProperties_url": {
 						"value": "[parameters('HttpServer2_properties_typeProperties_url')]"
+					},
+					"HttpServer3_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer3_properties_typeProperties_url')]"
 					}
 				}
 			},

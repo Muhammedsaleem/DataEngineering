@@ -187,7 +187,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "@concat('https://ergast.com/api/f1/', dataset().Name)",
+							"value": "@concat('', dataset().Name)",
 							"type": "Expression"
 						}
 					}

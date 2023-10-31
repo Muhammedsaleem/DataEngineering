@@ -1,6 +1,12 @@
 {
 	"name": "HttpServer3",
 	"properties": {
+		"parameters": {
+			"limit": {
+				"type": "string",
+				"defaultValue": "1000"
+			}
+		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {

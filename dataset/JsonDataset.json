@@ -16,7 +16,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@concat('', dataset().Name)",
+					"value": "@concat(dataset().Name, '.json')",
 					"type": "Expression"
 				}
 			}

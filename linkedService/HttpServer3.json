@@ -3,8 +3,8 @@
 	"properties": {
 		"parameters": {
 			"limit": {
-				"type": "string",
-				"defaultValue": "1000"
+				"type": "int",
+				"defaultValue": 1000
 			}
 		},
 		"annotations": [],

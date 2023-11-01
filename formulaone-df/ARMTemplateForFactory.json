@@ -176,7 +176,7 @@
 					"referenceName": "HttpServer3",
 					"type": "LinkedServiceReference",
 					"parameters": {
-						"limit": "1000"
+						"limit": 1000
 					}
 				},
 				"parameters": {
@@ -425,8 +425,8 @@
 			"properties": {
 				"parameters": {
 					"limit": {
-						"type": "string",
-						"defaultValue": "1000"
+						"type": "int",
+						"defaultValue": 1000
 					}
 				},
 				"annotations": [],

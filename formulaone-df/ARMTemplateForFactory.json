@@ -190,7 +190,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "@concat(dataset().Name, '.json')",
+							"value": "@concat(dataset().Name, '.json?limit=1000')",
 							"type": "Expression"
 						}
 					}
@@ -425,8 +425,8 @@
 			"properties": {
 				"parameters": {
 					"limit": {
-						"type": "int",
-						"defaultValue": 1000
+						"type": "string",
+						"defaultValue": "1000"
 					}
 				},
 				"annotations": [],
